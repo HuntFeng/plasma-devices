@@ -1,0 +1,57 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\colorlet{beamer@blendedblue}{green!40!black}
+\setbeamertemplate{caption}[numbered]
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{physics, siunitx}
+\usepackage{float, subcaption, graphicx}
+\usepackage{hyperref}
+
+\title{Chapter 4 - Confinement}
+\author{Hunt Feng\inst{1}}
+\institute[Usask]
+{
+	\inst{1}%
+	Faculty of Physics And Engineering Physics\\
+	University of Saskatchewan
+}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%
+% section page 
+%%%%%%%%%%%%%%%%%%%%
+\AtBeginSection[]
+{
+	\begin{frame}{Outline of Presentation}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%
+% title and TOC
+%%%%%%%%%%%%%%%%%%%%
+\maketitle
+\begin{frame}{Outline of Presentation}
+	\tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%
+% contents 
+%%%%%%%%%%%%%%%%%%%%
+\input{transport}
+\input{modes}
+\input{fluctuations}
+
+%%%%%%%%%%%%%%%%%%%%
+% references
+%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{frame}[allowframebreaks]
+	All figures are adopted from \cite{wesson_campbell_tokamaks_2011}.
+	\bibliographystyle{abbrv}
+	\bibliography{../references}
+	\nocite{*}
+\end{frame}
+
+\end{document}
