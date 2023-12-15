@@ -1,0 +1,5 @@
+Spheromak
+poloidal
+spheromak
+tokamks
+Larmor

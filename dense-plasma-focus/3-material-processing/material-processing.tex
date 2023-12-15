@@ -1,0 +1,54 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\colorlet{beamer@blendedblue}{green!40!black}
+\setbeamertemplate{caption}[numbered]
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{physics, siunitx}
+\usepackage{float, subcaption, graphicx}
+\usepackage{hyperref}
+
+\title{DPF for Material Processing}
+\author{Hunt Feng\inst{1}}
+\institute[Usask]
+{
+	\inst{1}%
+	Department of Physics and Engineering Physics\\
+	University of Saskatchewan
+}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%
+% section page 
+%%%%%%%%%%%%%%%%%%%%
+\AtBeginSection[]
+{
+	\begin{frame}{Outline of Presentation}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%
+% title and TOC
+%%%%%%%%%%%%%%%%%%%%
+\maketitle
+\begin{frame}{Outline of Presentation}
+	\tableofcontents
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%
+% contents 
+%%%%%%%%%%%%%%%%%%%%
+\input{plasma-nanotechnology.tex}
+
+%%%%%%%%%%%%%%%%%%%%
+% references
+%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{frame}[allowframebreaks]
+	\bibliographystyle{abbrv}
+	\bibliography{../references}
+	\nocite{*}
+\end{frame}
+
+\end{document}
